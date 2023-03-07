@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/priyanshmore/Desktop/DBMS/MORE_FinalProject.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2454"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainaddress"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="address" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="66"/><column index="2" value="68"/><column index="3" value="50"/><column index="4" value="68"/><column index="5" value="48"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="appointment" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="90"/><column index="2" value="103"/><column index="3" value="66"/><column index="4" value="61"/><column index="5" value="90"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="doctor" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="76"/><column index="3" value="98"/><column index="4" value="111"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="lab_test" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="66"/><column index="2" value="85"/><column index="3" value="80"/><column index="4" value="205"/><column index="5" value="89"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="medicine" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="71"/><column index="2" value="89"/><column index="3" value="88"/><column index="4" value="129"/><column index="5" value="56"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="order" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="52"/><column index="2" value="65"/><column index="3" value="81"/><column index="4" value="71"/><column index="5" value="29"/><column index="6" value="90"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="order1" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="52"/><column index="2" value="65"/><column index="3" value="81"/><column index="4" value="29"/><column index="5" value="90"/><column index="6" value="71"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="payment" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="82"/><column index="2" value="101"/><column index="3" value="88"/><column index="4" value="39"/><column index="5" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="subscription" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="89"/><column index="2" value="102"/><column index="3" value="47"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="user_patient" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="90"/><column index="2" value="108"/><column index="3" value="108"/><column index="4" value="86"/><column index="5" value="82"/><column index="6" value="89"/><column index="7" value="66"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="user_patient1" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="90"/><column index="2" value="108"/><column index="3" value="108"/><column index="4" value="86"/><column index="5" value="69"/><column index="6" value="89"/><column index="7" value="66"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE &quot;payment&quot; (
+    &quot;payment_id&quot; varchar(255),
+	&quot;payment_type&quot;	varchar(255),
+	PRIMARY KEY(&quot;payment_id&quot;)
+);
+
+CREATE TABLE &quot;subscription&quot; (
+&quot;subscription_id&quot; varchar(255),
+&quot;subscription_type&quot; varchar(255),
+&quot;amount&quot; varchar(255),
+PRIMARY KEY (&quot;subscription_id&quot;)
+);
+
+CREATE TABLE &quot;address&quot; (
+&quot;address_id&quot; varchar(255),
+&quot;apartment&quot; varchar(255),
+&quot;city&quot; varchar(255),
+&quot;state&quot; varchar(255),
+&quot;country&quot; varchar(255),
+PRIMARY KEY (&quot;address_id&quot;)
+);
+
+
+CREATE TABLE &quot;user_patient&quot; (
+	&quot;user_patient_id&quot;	varchar(255),
+	&quot;user_patient_name&quot;	char(150),
+	&quot;user_patient_order&quot; char(100),
+	&quot;phone_number&quot; INTEGER,
+	&quot;payment_id&quot; varchar(255),
+	&quot;subscription_id&quot; varchar(255),
+	&quot;address_id&quot; varchar(255),
+	PRIMARY KEY(&quot;user_patient_id&quot;),
+	FOREIGN KEY  (&quot;payment_id&quot;) REFERENCES &quot;payment&quot; (&quot;payment_id&quot;),
+    FOREIGN KEY  (&quot;subscription_id&quot;) REFERENCES &quot;subscription&quot; (&quot;subscription_id&quot;),
+	FOREIGN KEY  (&quot;address_id&quot;) REFERENCES &quot;address&quot; (&quot;address_id&quot;)
+);
+
+CREATE TABLE &quot;medicine&quot; (
+	&quot;medicine_id&quot;	varchar(255),
+	&quot;medicine_name&quot;	CHAR(150),
+	&quot;medicine_price&quot; INTEGER,
+	&quot;expiry_date&quot; DATE,
+	&quot;details&quot; varchar(255),
+	PRIMARY KEY(&quot;medicine_id&quot;)
+);
+
+
+CREATE TABLE &quot;lab_test&quot; (
+	&quot;lab_test_id&quot;	varchar(255),
+	&quot;lab_test_name&quot;	CHAR(150),
+	&quot;lab_test_type&quot; varchar(255),
+	&quot;lab_test_date_time&quot; INTEGER,
+	&quot;lab_test_report&quot; varchar(255),
+	PRIMARY KEY(&quot;lab_test_id&quot;)
+);
+
+
+CREATE TABLE &quot;doctor&quot; (
+	&quot;doctor_id&quot;	varchar(255),
+	&quot;doctor_name&quot;	CHAR(150),
+	&quot;doctor_specialist&quot; varchar(255),
+	&quot;doctor_prescription&quot; varchar(255),
+	PRIMARY KEY(&quot;doctor_id&quot;)
+);
+
+CREATE TABLE &quot;order1&quot; (
+	&quot;order_id&quot;	varchar(255),
+	&quot;order_type&quot;	CHAR(150),
+	&quot;order_amount&quot; varchar(255),
+	&quot;cart&quot; varchar(255),
+	&quot;user_patient_id&quot; varchar(255),
+	&quot;medicine_id&quot; varchar(255),
+	PRIMARY KEY(&quot;order_id&quot;),
+	FOREIGN KEY (&quot;user_patient_id&quot;) REFERENCES &quot;user_patient&quot; (&quot;user_patient_id&quot;),
+	FOREIGN KEY (&quot;medicine_id&quot;) REFERENCES &quot;medicine&quot; (&quot;medicine_id&quot;)
+);
+
+
+CREATE TABLE &quot;appointment&quot; (
+	&quot;appointment_id&quot;	varchar(255),
+	&quot;appointment_type&quot;	CHAR(150),
+	&quot;lab_test_id&quot; varchar(255),
+	&quot;doctor_id&quot; varchar(255),
+	&quot;user_patient_id&quot; varchar(255),
+	PRIMARY KEY(&quot;appointment_id&quot;),
+	FOREIGN KEY (&quot;user_patient_id&quot;) REFERENCES &quot;user_patient&quot; (&quot;user_patient_id&quot;),
+	FOREIGN KEY (&quot;lab_test_id&quot;) REFERENCES &quot;lab_test&quot; (&quot;lab_test_id&quot;),
+	FOREIGN KEY (&quot;doctor_id&quot;) REFERENCES &quot;doctor&quot; (&quot;doctor_id&quot;)
+);
+</sql><sql name="SQL 2">INSERT INTO subscription (subscription_id, subscription_type, amount)
+VALUES ('S101', 'Quaterly', '149'), 
+('S102', 'Monthly', '99'),
+('S103', 'Monthly', '99'),
+('S104', 'Monthly', '99'),
+ ('S105', 'Annualy', '499'),
+ ('S106', 'Quaterly', '149'),
+ ('S107', 'Annualy', '499'),
+ ('S108', 'HalfYearly', '299'),
+ ('S109', 'Monthly', '99'),
+ ('S110', 'HalfYearly', '299')
+;
+
+INSERT INTO payment (payment_id,payment_type)
+VALUES ('P101', 'card'),
+('P102', 'Card'),
+('P103', 'wallet'),
+('P104', 'phonetransfer'),
+('P105', 'phonetransfer'),
+('P106', 'wallet'),
+('P107', 'card'),
+('P108',  'wallet'),
+('P109', 'card'),
+('P110', 'phonetransfer')
+;
+
+INSERT INTO address (address_id, apartment, city, state, country)
+VALUES ('A101', 'Lamington', 'Mumbai', 'Maharashtra', 'India'),
+('A102', 'VasantVihar', 'Thane', 'Maharashtra', 'India'),
+('A103', 'CyberCity', 'Gurgoan', 'Delhi', 'India'),
+('A104', 'VasantValley', 'Thane', 'Maharashtra', 'India'),
+('A105', 'MarineDrive', 'Mumbai', 'Maharashtra', 'India'),
+('A106', 'ITpark', 'Gurgoan', 'Delhi', 'India'),
+('A107', 'ParkDrive', 'Mumbai', 'Maharashtra', 'India'),
+('A108', 'Hiranandani', 'Thane', 'Maharashtra', 'India'),
+('A109', 'LinkingRoad', 'Mumbai', 'Maharashtra', 'India'),
+('A110', 'Hypercity', 'Gurgoan', 'Delhi', 'India')
+;
+
+INSERT INTO user_patient (user_patient_id, user_patient_name, user_patient_order, phone_number, payment_id,  subscription_id, address_id)
+VALUES ('U101', 'James Bond', 'Medicnies', '9876543210', 'P101', 'S101', 'A101'),
+('U102', 'Bruce Lee', 'Lab Test', '9752301731', 'P102', 'S102', 'A102'),
+('U103', 'Angelina Jolie', 'Medicnies', '9374824941', 'P103', 'S103', 'A103'),
+('U104', 'Tom Cruise', 'Dr Appointment', '9438364926', 'P104', 'S104', 'A104'),
+('U105', 'Will Smith', 'Lab Test', '9147947361', 'P105', 'S105', 'A105'),
+('U106', 'Elizabeth Taylor', 'Medicnies', '9365847280', 'P106', 'S106', 'A106'),
+('U107', 'Vin Diesel', 'Lab Test', '8365871046', 'P107', 'S107', 'A107'),
+('U108', 'Scarlett Johansson', 'Dr Appointment', '8466072916', 'P108', 'S108', 'A108'),
+('U109', 'Megan Fox', 'Lab Test', '8264017492', 'P109', 'S109', 'A109'),
+('U110', 'Brad Pitt', 'Medicnies', '9261936173', 'P110', 'S110', 'A110')
+;
+
+INSERT INTO medicine(medicine_id, medicine_name, medicine_price, expiry_date, details)
+VALUES ('M101','BetadineCream','80', '2023/03/20','Antifungal'),
+('M102','LulibetCream','140', '2024/04/12','Antifungal'),
+('M103','Crocin-500','40', '2023/12/01','Fever'),
+('M104','Agmitra','300', '2024/11/24','Antifungal'),
+('M105','Dolo-650','70', '2025/01/01','Fever'),
+('M106','Rinifol','180', '2023/12/01','Acidity'),
+('M107','PanD','80', '2023/12/31','Acidity'),
+('M108','Sinarest','120','2024/06/31','Fever'),
+('M109','Levocet','320', '2023/08/15','Fever'),
+('M110','Cepodem','260','2024/10/20','Painkiller')
+;
+
+INSERT INTO lab_test (lab_test_id, lab_test_name, lab_test_type, lab_test_date_time, lab_test_report)
+VALUES ('L101', 'Blood Test', 'BodyCheckUp', '11:00am-11/12/2022', 'positive'),
+('L102', '','BodyCheckUp', '09:00am-11/13/2022', 'positive'),
+('L103', 'Sugar Test', 'Diabetes', '08:00am-11/11/2022', 'negative'),
+('L104', 'Sugar Test', 'Diabetes', '10:00am-11/12/2022', 'positive'),
+('L105', 'Blood Test', 'BodyCheckUp','03:00pm-11/15/2022', 'negative'),
+('L106', 'Blood Test', 'BodyCheckUp','01:00pm-11/13/2022', 'positive'),
+('L107', 'Sugar Test', 'Diabetes','11:00am-11/16/2022', 'negative'),
+('L108', 'Sugar Test','Diabetes', '10:00am-11/12/2022', 'positive'),
+('L109', 'Sugar Test', 'Diabetes','08:00am-11/18/2022', 'positive'),
+('L110', 'Urine Test', 'BodyCheckUp','11:00am-11/13/2022', 'negative')
+;
+
+INSERT INTO doctor ( doctor_id, doctor_name, doctor_specialist, doctor_prescription)
+VALUES ('D101', 'Dr Smith', 'Family Medicine', 'Fever'),
+('D102', 'Dr Willley', 'Radiologist', 'X-Ray'),
+('D103', 'Dr Brain', 'Family Medicine', 'Cold'),
+('D104', 'Dr Wisdom', 'Physician', 'Exercise'),
+('D105', 'Dr David', 'Radiologist', 'X-Ray'),
+('D106', 'Dr John', 'Family Medicine', 'Fever'),
+('D107', 'Dr Michaek', 'Family Medicine', 'Fever'),
+('D108', 'Dr Jennifer', 'Physician', 'Therapy'),
+('D109', 'Dr Richard', 'Family Medicine', 'Fever'),
+('D110', 'Dr William', 'Physician', 'Therapy')
+;
+
+
+INSERT INTO order1  (order_id, order_type, order_amount, cart, medicine_id, user_patient_id)
+VALUES  ('101','Medicine','780', 'BetadineCream','M101', 'U101'),
+('102','Healthcare','450', 'Vaporizer','M102', 'U102'),
+('103','Surgicare','1050', 'Masks','M103', 'U103'),
+('104','Surgicare','3200', 'PPE Kits','M104', 'U104'),
+('105','Medicine','120', 'Dolo 650','M105', 'U105'),
+('106','Medicine','1200', 'Rinifol','M106', 'U106'),
+('107','HealthCare','900', 'Oximeter','M107', 'U107'),
+('108','Medicine','2400','Thermometer','M108', 'U108'),
+('109','Medicine','1800', 'Levocet','M109', 'U109'),
+('110','HeathCare','2200','Nebulizer','M110', 'U110')
+;
+
+
+INSERT INTO appointment (appointment_id, appointment_type, lab_test_id, doctor_id, user_patient_id)
+VALUES ('A101', 'Lab Test', 'L101', 'D101', 'U101'),
+('A102', 'Dr Appointment', 'L102', 'D102', 'U102'),
+('A103', 'Lab Test', 'L103', 'D103', 'U103'),
+('A104', 'Lab Test', 'L104', 'D104', 'U104'),
+('A105', 'Dr Appointment', 'L105', 'D105', 'U105'),
+('A106', 'Dr Appointment', 'L106', 'D106', 'U106'),
+('A107', 'Dr Appointment', 'L107', 'D107', 'U107'),
+('A108', 'Lab Test', 'L108', 'D108', 'U108'),
+('A109', 'Dr Appointment', 'L109', 'D109', 'U109'),
+('A110', 'Lab Test', 'L110', 'D110', 'U110')
+;
+
+
+
+
+
+
+
+INSERT INTO user_patient (subscription_id)
+SELECT subscription_id FROM subscription
+
+ 
+ 
+ 
+ </sql><sql name="SQL 6">--How many user patient have monthly subscription plan || Answer: 4
+SELECT user_patient_id, user_patient_name, subscription_type
+FROM user_patient
+JOIN subscription ON subscription.subscription_id = user_patient.subscription_id
+WHERE subscription_type='Monthly';
+
+--How many  medicines in cart have Expiry date from 2023/01/01 to 2023/12/31 || ANSWER
+SELECT order_id, cart, medicine.expiry_date
+FROM medicine
+JOIN order1 ON order1.medicine_id = medicine.medicine_id
+WHERE expiry_date BETWEEN '2023/01/01' AND '2023/12/31';
+
+--Number of user patient having appointment with doctors || ANSWER: 2
+SELECT appointment_id, user_patient_name, user_patient_order
+FROM appointment
+JOIN user_patient ON appointment.user_patient_id = user_patient.user_patient_id
+WHERE user_patient_order='Dr Appointment';
+
+--How many appointment type have lab test type &quot;BodyCheckUp&quot; and doctor prescription &quot;Fever&quot;. || ANSWER: 2
+SELECT appointment_id, appointment_type, lab_test.lab_test_type, doctor.doctor_prescription
+FROM appointment
+JOIN lab_test on lab_test.lab_test_id = appointment.lab_test_id
+JOIN doctor on doctor.doctor_id = appointment.doctor_id
+WHERE lab_test_type='BodyCheckUp' AND doctor_prescription='Fever';
+
+--Count Number of lab test name &quot;Sugar Test&quot; and lab test type &quot;Diabetes&quot; || ANSWER: 5
+SELECT  lab_test_name, count(lab_test.lab_test_name) as count,   lab_test_type, count(lab_test.lab_test_type) as count
+FROM appointment
+JOIN lab_test ON lab_test.lab_test_id = appointment.lab_test_id
+WHERE lab_test_name='Sugar Test' OR lab_test_type='Diabetes';</sql><sql name="SQL 6">--How many user patient ordered medicines in cart have Expiry date from 2023/01/01 to 2023/12/31 ANSWER 3
+SELECT order_id, user_patient_name, user_patient_order, cart, expiry_date, details
+FROM order1
+JOIN medicine ON medicine.medicine_id = order1.medicine_id
+JOIN user_patient ON user_patient.user_patient_id = order1.user_patient_id
+WHERE user_patient_order='Medicines' AND expiry_date BETWEEN '2023/01/01' AND '2023/12/31';</sql><sql name="SQL 7">--How many user patient are from city Thane having monthly subscription plan Answer: 1
+SELECT user_patient_id, user_patient_name, subscription_type, payment_type, city
+FROM user_patient
+JOIN subscription ON subscription.subscription_id =  user_patient.subscription_id
+JOIN payment ON payment.payment_id = user_patient.payment_id
+JOIN address ON address.address_id = user_patient.address_id
+WHERE subscription_type='Annualy' AND payment_type='card' AND city='Mumbai';</sql><sql name="SQL 8">--How many appointment type Doctor with lab test type &quot;Sugar Test&quot; and doctor Specialist in &quot;Family Medicine&quot;. ANSWER: 2
+SELECT appointment_id, appointment_type, lab_test_name, lab_test_type, doctor_specialist
+FROM appointment
+JOIN lab_test ON lab_test.lab_test_id = appointment.lab_test_id
+JOIN doctor ON doctor.doctor_id = appointment.doctor_id
+WHERE appointment_type='Dr Appointment' AND  lab_test_name='Sugar Test' AND doctor_specialist='Family Medicine';</sql><sql name="SQL 9">--How many user patient are from city Thane having monthly subscription plan Answer: 2
+SELECT user_patient_id, user_patient_name, subscription_type, city
+FROM user_patient
+JOIN subscription ON subscription.subscription_id = user_patient.subscription_id
+JOIN address ON address.address_id = user_patient.address_id
+WHERE subscription_type='Monthly' AND city='Thane';</sql><sql name="SQL 10">SELECT order_type, sum(order1.order_amount) as orders
+FROM order1
+GROUP BY order_type;
+
+SELECT order_type, count (order_amount) as orders, count(*) * 100.0 / sum(count (*))
+OVER () AS order_amount
+FROM order1
+GROUP BY order_type</sql><current_tab id="2"/></tab_sql></sqlb_project>
